@@ -6,11 +6,19 @@
 [![Test coverage]][Test coverage report]
 [![Uses semantic versioning]][SemVer]
 
+## Installation and documentation
+
+* Available as [Composer] package [eloquent/constance].
+* [API documentation] available.
+
 <!-- References -->
 
-[Build status]: https://api.travis-ci.org/ezzatron/constance.png?branch=master
-[Latest build]: https://travis-ci.org/ezzatron/constance
+[API documentation]: http://lqnt.co/constance/artifacts/documentation/api/
+[Build status]: https://api.travis-ci.org/eloquent/constance.png?branch=master
+[Composer]: http://getcomposer.org/
+[eloquent/constance]: https://packagist.org/packages/eloquent/constance
+[Latest build]: https://travis-ci.org/eloquent/constance
 [SemVer]: http://semver.org/
-[Test coverage report]: https://coveralls.io/r/ezzatron/constance
-[Test coverage]: https://coveralls.io/repos/ezzatron/constance/badge.png?branch=master
+[Test coverage report]: https://coveralls.io/r/eloquent/constance
+[Test coverage]: https://coveralls.io/repos/eloquent/constance/badge.png?branch=master
 [Uses semantic versioning]: http://b.repl.ca/v1/semver-yes-brightgreen.png

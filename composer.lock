@@ -3,20 +3,20 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "04ae7ee50ac3eb722a41d55920a5d433",
+    "hash": "1ba76a76bf3e4e99f7d88eb5efcc4319",
     "packages": [
         {
             "name": "eloquent/enumeration",
-            "version": "dev-feature/interfaces",
+            "version": "5.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/eloquent/enumeration.git",
-                "reference": "cf077ce5718d20a7c31b7e37d8355b638859e535"
+                "reference": "f5a1d326221dfef3694fe960ed4bdca96ae5c900"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/eloquent/enumeration/zipball/cf077ce5718d20a7c31b7e37d8355b638859e535",
-                "reference": "cf077ce5718d20a7c31b7e37d8355b638859e535",
+                "url": "https://api.github.com/repos/eloquent/enumeration/zipball/f5a1d326221dfef3694fe960ed4bdca96ae5c900",
+                "reference": "f5a1d326221dfef3694fe960ed4bdca96ae5c900",
                 "shasum": ""
             },
             "require": {
@@ -52,7 +52,7 @@
                 "set",
                 "type"
             ],
-            "time": "2013-11-08 06:48:48"
+            "time": "2013-11-11 02:48:55"
         },
         {
             "name": "icecave/isolator",
@@ -1069,9 +1069,9 @@
 
     ],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "eloquent/enumeration": 20
-    },
+    "stability-flags": [
+
+    ],
     "platform": {
         "php": ">=5.3"
     },
