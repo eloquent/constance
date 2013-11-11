@@ -1,0 +1,27 @@
+{
+    "name": "eloquent/constance",
+    "description": "PHP constants as enumerations.",
+    "keywords": ["constant", "enumeration", "enum", "name", "value"],
+    "homepage": "https://github.com/eloquent/constance",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Erin Millard",
+            "email": "ezzatron@gmail.com",
+            "homepage": "http://ezzatron.com/"
+        }
+    ],
+    "require": {
+        "php": ">=5.3",
+        "eloquent/enumeration": "~5",
+        "icecave/isolator": "~2"
+    },
+    "require-dev": {
+        "icecave/archer": "~1"
+    },
+    "autoload": {
+        "psr-0": {
+            "Eloquent\\Constance": "src"
+        }
+    }
+}
