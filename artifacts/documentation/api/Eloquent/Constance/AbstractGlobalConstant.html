@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>Eloquent\Constance\AbstractGlobalConstant | Constance API</title>
+                    <link rel="stylesheet" type="text/css" href="../../stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="../../classes.html">Classes</a></li>
+                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                        <li><a href="../../interfaces.html">Interfaces</a></li>
+            <li><a href="../../doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Constance API</div>
+
+            <div class="type">Class</div>
+    <h1><a href="../../Eloquent/Constance.html">Eloquent\Constance</a>\AbstractGlobalConstant</h1>
+    </div>
+        <div class="content">
+                <p>abstract class    <strong>AbstractGlobalConstant</strong>        extends <a href="../../Eloquent/Constance/AbstractConstant.html"><abbr title="Eloquent\Constance\AbstractConstant">AbstractConstant</abbr></a></p>
+
+            <div class="description">
+            <p>An abstract base class for implementing global constants as enumerations.</p>
+            <p>
+</p>
+        </div>
+    
+            <h2>Constants</h2>
+
+            <table>
+                    <tr>
+                <td>CONSTANCE_PATTERN</td>
+                <td class="last">
+                    <p><em>The expression used to match constant names that should be included in this enumeration.</em></p>
+                    <p>
+</p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    static&nbsp;<abbr title="Eloquent\Constance\array&lt;ConstantInterface&gt;">array&lt;ConstantInterface&gt;</abbr>
+                </td>
+                <td class="last">
+                    <a href="#method_membersByBitmask">membersByBitmask</a>(integer $mask)
+                    <p>Get all members whose values match the supplied bitmask.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../Eloquent/Constance/AbstractConstant.html#method_membersByBitmask"><abbr title="Eloquent\Constance\AbstractConstant">AbstractConstant</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;<abbr title="Eloquent\Constance\array&lt;ConstantInterface&gt;">array&lt;ConstantInterface&gt;</abbr>
+                </td>
+                <td class="last">
+                    <a href="#method_membersExcludedByBitmask">membersExcludedByBitmask</a>(integer $mask)
+                    <p>Get all members whose values do not match the supplied bitmask.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../Eloquent/Constance/AbstractConstant.html#method_membersExcludedByBitmask"><abbr title="Eloquent\Constance\AbstractConstant">AbstractConstant</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;integer
+                </td>
+                <td class="last">
+                    <a href="#method_membersToBitmask">membersToBitmask</a>(<abbr title="Eloquent\Constance\mixed&lt;ConstantInterface&gt;">mixed&lt;ConstantInterface&gt;</abbr> $members)
+                    <p>Generates a bitmask representing the suppled members.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../Eloquent/Constance/AbstractConstant.html#method_membersToBitmask"><abbr title="Eloquent\Constance\AbstractConstant">AbstractConstant</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_name">name</a>()
+                    <p>Get the name of this constant.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../Eloquent/Constance/AbstractConstant.html#method_name"><abbr title="Eloquent\Constance\AbstractConstant">AbstractConstant</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    boolean
+                </td>
+                <td class="last">
+                    <a href="#method_valueMatchesBitmask">valueMatchesBitmask</a>(integer $mask)
+                    <p>Returns true if this constant's value matches the supplied bitmask.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../Eloquent/Constance/AbstractConstant.html#method_valueMatchesBitmask"><abbr title="Eloquent\Constance\AbstractConstant">AbstractConstant</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method___toString">__toString</a>()
+                    <p>Returns a string representation of this constant.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../Eloquent/Constance/AbstractConstant.html#method___toString"><abbr title="Eloquent\Constance\AbstractConstant">AbstractConstant</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_qualifiedName">qualifiedName</a>()
+                    <p>Get the fully qualified name of this constant.</p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_membersByBitmask">
+        <div class="location">in <a href="../../Eloquent/Constance/AbstractConstant.html#method_membersByBitmask"><abbr title="Eloquent\Constance\AbstractConstant">AbstractConstant</abbr></a> at line 36</div>
+        <code>final        static    public            <abbr title="Eloquent\Constance\array&lt;ConstantInterface&gt;">array&lt;ConstantInterface&gt;</abbr>
+    <strong>membersByBitmask</strong>(integer $mask)</code>
+    </h3>
+    <div class="details">
+        <p>Get all members whose values match the supplied bitmask.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>integer</td>
+                <td>$mask</td>
+                <td>The bitmask to use when searching.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><abbr title="Eloquent\Constance\array&lt;ConstantInterface&gt;">array&lt;ConstantInterface&gt;</abbr></td>
+            <td>The matching members.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="Exception\NonIntegerValueException">NonIntegerValueException</abbr></td>
+                <td>If any member's value is a non-integer.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_membersExcludedByBitmask">
+        <div class="location">in <a href="../../Eloquent/Constance/AbstractConstant.html#method_membersExcludedByBitmask"><abbr title="Eloquent\Constance\AbstractConstant">AbstractConstant</abbr></a> at line 53</div>
+        <code>final        static    public            <abbr title="Eloquent\Constance\array&lt;ConstantInterface&gt;">array&lt;ConstantInterface&gt;</abbr>
+    <strong>membersExcludedByBitmask</strong>(integer $mask)</code>
+    </h3>
+    <div class="details">
+        <p>Get all members whose values do not match the supplied bitmask.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>integer</td>
+                <td>$mask</td>
+                <td>The bitmask to use when searching.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><abbr title="Eloquent\Constance\array&lt;ConstantInterface&gt;">array&lt;ConstantInterface&gt;</abbr></td>
+            <td>The non-matching members.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="Exception\NonIntegerValueException">NonIntegerValueException</abbr></td>
+                <td>If any member's value is a non-integer.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_membersToBitmask">
+        <div class="location">in <a href="../../Eloquent/Constance/AbstractConstant.html#method_membersToBitmask"><abbr title="Eloquent\Constance\AbstractConstant">AbstractConstant</abbr></a> at line 70</div>
+        <code>final        static    public            integer
+    <strong>membersToBitmask</strong>(<abbr title="Eloquent\Constance\mixed&lt;ConstantInterface&gt;">mixed&lt;ConstantInterface&gt;</abbr> $members)</code>
+    </h3>
+    <div class="details">
+        <p>Generates a bitmask representing the suppled members.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="Eloquent\Constance\mixed&lt;ConstantInterface&gt;">mixed&lt;ConstantInterface&gt;</abbr></td>
+                <td>$members</td>
+                <td>The members to create a bitmask for.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>integer</td>
+            <td>The bitmask representing the supplied members.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="Exception\NonIntegerValueException">NonIntegerValueException</abbr></td>
+                <td>If any member's value is a non-integer.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_name">
+        <div class="location">in <a href="../../Eloquent/Constance/AbstractConstant.html#method_name"><abbr title="Eloquent\Constance\AbstractConstant">AbstractConstant</abbr></a> at line 89</div>
+        <code>            public            string
+    <strong>name</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Get the name of this constant.</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>The constant name.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_valueMatchesBitmask">
+        <div class="location">in <a href="../../Eloquent/Constance/AbstractConstant.html#method_valueMatchesBitmask"><abbr title="Eloquent\Constance\AbstractConstant">AbstractConstant</abbr></a> at line 102</div>
+        <code>            public            boolean
+    <strong>valueMatchesBitmask</strong>(integer $mask)</code>
+    </h3>
+    <div class="details">
+        <p>Returns true if this constant's value matches the supplied bitmask.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>integer</td>
+                <td>$mask</td>
+                <td>The mask to test against.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>boolean</td>
+            <td>True if the value matches.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="Exception\NonIntegerValueException">NonIntegerValueException</abbr></td>
+                <td>If this constant's value is not an integer.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method___toString">
+        <div class="location">in <a href="../../Eloquent/Constance/AbstractConstant.html#method___toString"><abbr title="Eloquent\Constance\AbstractConstant">AbstractConstant</abbr></a> at line 116</div>
+        <code>            public            string
+    <strong>__toString</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Returns a string representation of this constant.</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>The string representation.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_qualifiedName">
+        <div class="location">at line 26</div>
+        <code>            public            string
+    <strong>qualifiedName</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Get the fully qualified name of this constant.</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>The qualified constant name.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

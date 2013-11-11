@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>Eloquent\Constance\ClassConstantInterface | Constance API</title>
+                    <link rel="stylesheet" type="text/css" href="../../stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="../../classes.html">Classes</a></li>
+                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                        <li><a href="../../interfaces.html">Interfaces</a></li>
+            <li><a href="../../doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Constance API</div>
+
+            <div class="type">Interface</div>
+    <h1><a href="../../Eloquent/Constance.html">Eloquent\Constance</a>\ClassConstantInterface</h1>
+    </div>
+        <div class="content">
+                <p>interface    <strong>ClassConstantInterface</strong>        implements
+        <a href="../../Eloquent/Constance/ConstantInterface.html"><abbr title="Eloquent\Constance\ConstantInterface">ConstantInterface</abbr></a></p>
+
+            <div class="description">
+            <p>The interface implemented by class constant instances.</p>
+            <p>
+</p>
+        </div>
+    
+    
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_name">name</a>()
+                    <p>Get the name of this constant.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../Eloquent/Constance/ConstantInterface.html#method_name"><abbr title="Eloquent\Constance\ConstantInterface">ConstantInterface</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_qualifiedName">qualifiedName</a>()
+                    <p>Get the fully qualified name of this constant.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../Eloquent/Constance/ConstantInterface.html#method_qualifiedName"><abbr title="Eloquent\Constance\ConstantInterface">ConstantInterface</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    boolean
+                </td>
+                <td class="last">
+                    <a href="#method_valueMatchesBitmask">valueMatchesBitmask</a>(integer $mask)
+                    <p>Returns true if this constant's value matches the supplied bitmask.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../Eloquent/Constance/ConstantInterface.html#method_valueMatchesBitmask"><abbr title="Eloquent\Constance\ConstantInterface">ConstantInterface</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_className">className</a>()
+                    <p>Get the name of the class to which this constant belongs.</p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_name">
+        <div class="location">in <a href="../../Eloquent/Constance/ConstantInterface.html#method_name"><abbr title="Eloquent\Constance\ConstantInterface">ConstantInterface</abbr></a> at line 26</div>
+        <code>            public            string
+    <strong>name</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Get the name of this constant.</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>The constant name.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_qualifiedName">
+        <div class="location">in <a href="../../Eloquent/Constance/ConstantInterface.html#method_qualifiedName"><abbr title="Eloquent\Constance\ConstantInterface">ConstantInterface</abbr></a> at line 33</div>
+        <code>            public            string
+    <strong>qualifiedName</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Get the fully qualified name of this constant.</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>The qualified constant name.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_valueMatchesBitmask">
+        <div class="location">in <a href="../../Eloquent/Constance/ConstantInterface.html#method_valueMatchesBitmask"><abbr title="Eloquent\Constance\ConstantInterface">ConstantInterface</abbr></a> at line 43</div>
+        <code>            public            boolean
+    <strong>valueMatchesBitmask</strong>(integer $mask)</code>
+    </h3>
+    <div class="details">
+        <p>Returns true if this constant's value matches the supplied bitmask.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>integer</td>
+                <td>$mask</td>
+                <td>The mask to test against.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>boolean</td>
+            <td>True if the value matches.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="Exception\NonIntegerValueException">NonIntegerValueException</abbr></td>
+                <td>If this constant's value is not an integer.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_className">
+        <div class="location">at line 24</div>
+        <code>            public            string
+    <strong>className</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Get the name of the class to which this constant belongs.</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>The class name.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>
