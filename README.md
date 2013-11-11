@@ -32,7 +32,7 @@ developer has no control over. If it is within the developer's control to
 implement a first-class enumeration, then the recommended approach is to use
 an [enumeration library] directly.
 
-## Implementing a *Constance* enumeration
+## Implementing an enumeration of constants
 
 *Constance* does not provide any concrete classes, but instead provides abstract
 base classes to make implementation of constant enumerations extremely
