@@ -20,7 +20,7 @@ a powerful [enumeration library] to provide a rich feature set.
 Amongst other uses, *Constance* allows a developer to:
 
 - Type hint for a valid value as defined in a pre-existing set of constants.
-  Examples include [PHP error levels], or [PDO attributes].
+  Examples include the PHP error levels, and PDO attributes.
 - Retrieve information about a constant from its value, such as its name (useful
   for logging and debugging).
 - Perform simple operations on sets of constants with [bitwise] values,
