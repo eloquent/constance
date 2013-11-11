@@ -12,6 +12,7 @@
 namespace Eloquent\Constance;
 
 use Eloquent\Constance\Test\ErrorLevel;
+use Eloquent\Constance\Test\GlobalConstant;
 use Eloquent\Constance\Test\InvalidErrorLevelExtendsConcrete;
 use PHPUnit_Framework_TestCase;
 
@@ -58,5 +59,10 @@ class AbstractGlobalConstantTest extends PHPUnit_Framework_TestCase
     {
         $this->setExpectedException(__NAMESPACE__ . '\Exception\UndefinedGlobalConstantException');
         ErrorLevel::nameByValue('foo');
+    }
+
+    public function testGlobalConstantUnfiltered()
+    {
+        $this->assertTrue(GlobalConstant::TRUE()->value());
     }
 }

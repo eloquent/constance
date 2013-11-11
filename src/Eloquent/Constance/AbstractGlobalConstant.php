@@ -35,9 +35,15 @@ abstract class AbstractGlobalConstant extends AbstractConstant
      */
     final protected static function initializeMembers()
     {
-        foreach (get_defined_constants() as $key => $value) {
-            if (preg_match(static::CONSTANCE_PATTERN, $key)) {
+        if (null === static::CONSTANCE_PATTERN) {
+            foreach (get_defined_constants() as $key => $value) {
                 new static($key, $value);
+            }
+        } else {
+            foreach (get_defined_constants() as $key => $value) {
+                if (preg_match(static::CONSTANCE_PATTERN, $key)) {
+                    new static($key, $value);
+                }
             }
         }
     }

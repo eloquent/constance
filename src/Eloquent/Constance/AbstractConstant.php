@@ -23,7 +23,7 @@ abstract class AbstractConstant extends AbstractValueMultiton implements
      * The expression used to match constant names that should be included in
      * this enumeration.
      */
-    const CONSTANCE_PATTERN = '{.}';
+    const CONSTANCE_PATTERN = null;
 
     /**
      * Get all members whose values match the supplied bitmask.

@@ -62,9 +62,15 @@ abstract class AbstractClassConstant extends AbstractConstant implements
             );
         }
 
-        foreach ($reflector->getConstants() as $key => $value) {
-            if (preg_match(static::CONSTANCE_PATTERN, $key)) {
+        if (null === static::CONSTANCE_PATTERN) {
+            foreach ($reflector->getConstants() as $key => $value) {
                 new static($key, $value);
+            }
+        } else {
+            foreach ($reflector->getConstants() as $key => $value) {
+                if (preg_match(static::CONSTANCE_PATTERN, $key)) {
+                    new static($key, $value);
+                }
             }
         }
     }
