@@ -2,7 +2,7 @@
 
 *PHP constants as enumerations.*
 
-[![The most recent stable version is 0.1.0][version-image]][Semantic versioning]
+[![The most recent stable version is 0.1.1][version-image]][Semantic versioning]
 [![Current build status image][build-image]][Current build status]
 [![Current coverage status image][coverage-image]][Current coverage status]
 
@@ -184,4 +184,4 @@ includes strict standards warnings for the current run-time environment.
 [Current coverage status]: https://coveralls.io/r/eloquent/constance
 [eloquent/constance]: https://packagist.org/packages/eloquent/constance
 [Semantic versioning]: http://semver.org/
-[version-image]: http://img.shields.io/:semver-0.1.0-brightgreen.svg "This project uses semantic versioning"
+[version-image]: http://img.shields.io/:semver-0.1.1-brightgreen.svg "This project uses semantic versioning"
