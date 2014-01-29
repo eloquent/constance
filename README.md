@@ -2,9 +2,9 @@
 
 *PHP constants as enumerations.*
 
-[![Build status]][Latest build]
-[![Test coverage]][Test coverage report]
-[![Uses semantic versioning]][SemVer]
+[![The most recent stable version is 0.1.0][version-image]][Semantic versioning]
+[![Current build status image][build-image]][Current build status]
+[![Current coverage status image][coverage-image]][Current coverage status]
 
 ## Installation and documentation
 
@@ -177,11 +177,11 @@ includes strict standards warnings for the current run-time environment.
 [PHP error levels]: http://www.php.net/manual/en/errorfunc.constants.php
 
 [API documentation]: http://lqnt.co/constance/artifacts/documentation/api/
-[Build status]: https://api.travis-ci.org/eloquent/constance.png?branch=master
 [Composer]: http://getcomposer.org/
+[build-image]: http://img.shields.io/travis/eloquent/constance/develop.svg "Current build status for the develop branch"
+[Current build status]: https://travis-ci.org/eloquent/constance
+[coverage-image]: http://img.shields.io/coveralls/eloquent/constance/develop.svg "Current test coverage for the develop branch"
+[Current coverage status]: https://coveralls.io/r/eloquent/constance
 [eloquent/constance]: https://packagist.org/packages/eloquent/constance
-[Latest build]: https://travis-ci.org/eloquent/constance
-[SemVer]: http://semver.org/
-[Test coverage report]: https://coveralls.io/r/eloquent/constance
-[Test coverage]: https://coveralls.io/repos/eloquent/constance/badge.png?branch=master
-[Uses semantic versioning]: http://b.repl.ca/v1/semver-yes-brightgreen.png
+[Semantic versioning]: http://semver.org/
+[version-image]: http://img.shields.io/:semver-0.1.0-brightgreen.svg "This project uses semantic versioning"
