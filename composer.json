@@ -20,8 +20,8 @@
         "icecave/archer": "~1"
     },
     "autoload": {
-        "psr-0": {
-            "Eloquent\\Constance": "src"
+        "psr-4": {
+            "Eloquent\\Constance\\": "src"
         }
     }
 }
